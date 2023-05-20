@@ -17,7 +17,7 @@ Hengtao Li<sup>1*</sup>, &nbsp;
 
 ## 🚀 Overview
 <div align="center">
-<img width="800" alt="image" src="imgs/overview.png">
+<img width="800" alt="image" src="imgs/framework.png">
 </div>
 
 ## 📖 Description
