@@ -53,7 +53,7 @@ segmentation, surpassing the state-of-the-art specialist model by 1.6%. In addit
 ### Cross-Style Object and Object Part Segmentation
 
 <div align="center">
-<img width="400" alt="image" src="imgs/cross_style.png">
+<img width="800" alt="image" src="imgs/cross_style.png">
 </div>
 
 ### Controllable Mask Output
