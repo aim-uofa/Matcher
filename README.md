@@ -17,7 +17,7 @@ Hengtao Li<sup>1*</sup>, &nbsp;
 
 ## 🚀 Overview
 <div align="center">
-<img width="800" alt="image" src="imgs/framework.png">
+<img width="800" alt="image" src="figs/framework.png">
 </div>
 
 ## 📖 Description
@@ -41,32 +41,32 @@ segmentation, surpassing the state-of-the-art specialist model by 1.6%. In addit
 ### One-Shot Semantic Segmantation
 
 <div align="center">
-<img width="800" alt="image" src="imgs/oss.png">
+<img width="800" alt="image" src="figs/oss.png">
 </div>
 
 ### One-Shot Object Part Segmantation
 
 <div align="center">
-<img width="800" alt="image" src="imgs/part.png">
+<img width="800" alt="image" src="figs/part.png">
 </div>
 
 ### Cross-Style Object and Object Part Segmentation
 
 <div align="center">
-<img width="800" alt="image" src="imgs/cross_style.png">
+<img width="800" alt="image" src="figs/cross_style.png">
 </div>
 
 ### Controllable Mask Output
 
 <div align="center">
-<img width="800" alt="image" src="imgs/control.png">
+<img width="800" alt="image" src="figs/control.png">
 </div>
 
 
 ### Video Object Segmentation
 
 <div align="center">
-<img width="800" alt="image" src="imgs/vos.png">
+<img width="800" alt="image" src="figs/vos.png">
 </div>
 
 
@@ -75,13 +75,17 @@ segmentation, surpassing the state-of-the-art specialist model by 1.6%. In addit
 
 The content of this project itself is licensed under [LICENSE](LICENSE).
 
-[//]: # (## 🖊️ Citation)
+## 🖊️ Citation
 
-[//]: # ()
-[//]: # (If you find this project useful in your research, please consider cite:)
 
-[//]: # ()
-[//]: # (```BibTeX)
+If you find this project useful in your research, please consider cite:
 
-[//]: # ()
-[//]: # (```)
+
+```BibTeX
+@article{liu2023matcher,
+  title={Matcher: Segment Anything with One Shot Using All-Purpose Feature Matching},
+  author={Liu, Yang and Zhu, Muzhi and Li, Hengtao and Chen, Hao and Wang, Xinlong and Shen, Chunhua},
+  journal={arXiv preprint arXiv:2305.13310},
+  year={2023}
+}
+```
