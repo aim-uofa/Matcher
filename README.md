@@ -69,8 +69,9 @@ segmentation, surpassing the state-of-the-art specialist model by 1.6%. In addit
 <img width="800" alt="image" src="figs/vos.png">
 </div>
 
+<div align="center">
 https://github.com/aim-uofa/Matcher/assets/119775808/a96f892e-7782-4723-a5a2-d133b81fe1fd
-
+</div>
 
 ## 🎫 License
 
