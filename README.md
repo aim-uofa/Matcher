@@ -70,7 +70,6 @@ segmentation, surpassing the state-of-the-art specialist model by 1.6%. In addit
 </div>
 
 
-
 ## 🎫 License
 
 The content of this project itself is licensed under [LICENSE](LICENSE).
