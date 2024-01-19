@@ -22,18 +22,35 @@ Hengtao Li<sup>1*</sup>, &nbsp;
 
 ## 📖 Description
 
-Powered by large-scale pre-training, vision foundation models exhibit significant potential in open-world image understanding. Even though individual models have limited capabilities, 
-combining multiple such models properly can lead to positive synergies and unleash their full potential. In this work, we present **Matcher**, which segments anything with one shot 
-by integrating an all-purpose feature extraction model and a class-agnostic segmentation model. Naively connecting the models results in unsatisfying performance, e.g., the models tend 
-to generate matching outliers and false-positive mask fragments. To address these issues, we design a bidirectional matching strategy for accurate cross-image semantic dense matching 
-and a robust prompt sampler for mask proposal generation. In addition, we propose a novel instance-level matching strategy for controllable mask merging. The proposed Matcher method 
-delivers impressive generalization performance across various segmentation tasks, all without training. For example, it achieves 52.7% mIoU on COCO-20<sup>i</sup> for one-shot semantic 
-segmentation, surpassing the state-of-the-art specialist model by 1.6%. In addition, our visualization results show open-world generality and flexibility on images in the wild.
+
+Powered by large-scale pre-training, vision foundation models exhibit significant potential in open-world image understanding. However, unlike large language models that excel at directly 
+tackling various language tasks, vision foundation models require a task-specific model structure followed by fine-tuning on specific tasks. In this work, we present **Matcher**, 
+a novel perception paradigm that utilizes off-the-shelf vision foundation models to address various perception tasks. Matcher can segment anything by using an in-context example without training. 
+Additionally, we design three effective components within the Matcher framework to collaborate with these foundation models and unleash their full potential in diverse perception tasks. 
+Matcher demonstrates impressive generalization performance across various segmentation tasks, all without training. Our visualization results further showcase the open-world generality and flexibility of Matcher when applied to images in the wild.
+
+## ℹ️ News
+
+- 2024.1 Matcher has been accepted to ICLR 2024!
+- 2024.1 We provide a Gradio Demo.
+- 2024.1 Release code of one-shot semantic segmentation and one-shot part segmentation tasks.
 
 
 ## 🗓️ TODO
-- [ ] Online Demo 
-- [ ] Release code and models
+- [x] Gradio Demo 
+- [x] Release code of one-shot semantic segmentation and one-shot part segmentation tasks
+- [ ] Release code and models for VOS
+
+
+## 🏗️ Installation
+
+See [installation instructions](INSTALL.md).
+
+## 👻 Getting Started
+
+See [Preparing Datasets for Matcher](datasets/README.md).
+
+See [Getting Started with Matcher](GETTING_STARTED.md).
 
 
 ## 🖼️ Demo
@@ -68,7 +85,6 @@ segmentation, surpassing the state-of-the-art specialist model by 1.6%. In addit
 https://github.com/aim-uofa/Matcher/assets/119775808/9ff9502d-7d2a-43bc-a8ef-01235097d62b
 
 
-
 ## 🎫 License
 
 The content of this project itself is licensed under [LICENSE](LICENSE).
@@ -87,3 +103,6 @@ If you find this project useful in your research, please consider cite:
   year={2023}
 }
 ```
+
+## Acknowledgement
+[SAM](https://github.com/facebookresearch/segment-anything), [DINOv2](https://github.com/facebookresearch/dinov2), [SegGPT](https://github.com/baaivision/Painter/tree/main/SegGPT), [HSNet](https://github.com/juhongm999/hsnet) and [detectron2](https://github.com/facebookresearch/detectron2).
