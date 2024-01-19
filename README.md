@@ -3,7 +3,7 @@
 <h1>Matcher: Segment Anything with One Shot Using All-Purpose Feature Matching </h1>
 
 [Yang Liu](https://scholar.google.com/citations?user=9JcQ2hwAAAAJ&hl=en)<sup>1*</sup>, &nbsp; 
-Muzhi Zhu<sup>1*</sup>, &nbsp; 
+[Muzhi Zhu](https://scholar.google.com/citations?user=064gBH4AAAAJ&hl=en)<sup>1*</sup>, &nbsp; 
 Hengtao Li<sup>1*</sup>, &nbsp;
 [Hao Chen](https://stan-haochen.github.io/)<sup>1</sup>, &nbsp;
 [Xinlong Wang](https://www.xloong.wang/)<sup>2</sup>, &nbsp;
