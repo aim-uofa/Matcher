@@ -13,7 +13,7 @@ import torch
 from gradio_demo.app_running import create_demo
 from gradio_demo.runner import Runner
 
-ORIGINAL_SPACE_ID = 'BAAI/Matcher'
+ORIGINAL_SPACE_ID = ''
 SPACE_ID = os.getenv('SPACE_ID', ORIGINAL_SPACE_ID)
 GPU_DATA = getoutput('nvidia-smi')
 

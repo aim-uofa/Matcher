@@ -39,3 +39,10 @@ python main_oss.py  \
 * You can replace `--nshot 1` with `--nshot 5` and replace `--num_merging_mask 9` with `--num_merging_mask 5` to test 5-shot performance on COCO-20<sup>i</sup>.
 * You can find more commands in `scripts/` for other datasets.
 
+### Gradio Demo
+
+Launch the local demo built with [gradio](https://gradio.app/):
+```
+python app.py
+```
+
