@@ -30,7 +30,7 @@ a novel perception paradigm that utilizes off-the-shelf vision foundation models
 Additionally, we design three effective components within the Matcher framework to collaborate with these foundation models and unleash their full potential in diverse perception tasks. 
 Matcher demonstrates impressive generalization performance across various segmentation tasks, all without training. Our visualization results further showcase the open-world generality and flexibility of Matcher when applied to images in the wild.
 
-[Paper](https://openreview.net/pdf?id=yzRXdhk2he)
+[Paper](https://arxiv.org/abs/2305.13310)
 
 ## ℹ️ News
 
