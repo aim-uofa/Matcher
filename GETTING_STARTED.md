@@ -3,12 +3,12 @@
 
 ### Prepare models
 
-Download the model weights of [DINOv2](https://dl.fbaipublicfiles.com/dinov2/dinov2_vitl14/dinov2_vitl14_pretrain.pth) and [SAM](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth), and organize them as follows.
+Download the model weights of [DINOv2](https://dl.fbaipublicfiles.com/dinov2/dinov2_vitl14/dinov2_vitl14_pretrain.pth), [SAM](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth) and [Semantic-SAM](https://github.com/UX-Decoder/Semantic-SAM/releases/download/checkpoint/swint_only_sam_many2many.pth), and organize them as follows.
 ```
 models/
     dinov2_vitl14_pretrain.pth
     sam_vit_h_4b8939.pth
-    swint_only_sam_many2many.pth # Semantic-SAM
+    swint_only_sam_many2many.pth
 ```
 
 
