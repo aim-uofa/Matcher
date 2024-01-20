@@ -35,6 +35,7 @@ Matcher demonstrates impressive generalization performance across various segmen
 ## ℹ️ News
 
 - 2024.1 Matcher has been accepted to ICLR 2024!
+- 2024.1 Matcher supports [Semantic-SAM](https://github.com/UX-Decoder/Semantic-SAM) for better part segmentation.
 - 2024.1 We provide a Gradio Demo.
 - 2024.1 Release code of one-shot semantic segmentation and one-shot part segmentation tasks.
 
@@ -108,4 +109,4 @@ If you find this project useful in your research, please consider cite:
 ```
 
 ## Acknowledgement
-[SAM](https://github.com/facebookresearch/segment-anything), [DINOv2](https://github.com/facebookresearch/dinov2), [SegGPT](https://github.com/baaivision/Painter/tree/main/SegGPT), [HSNet](https://github.com/juhongm999/hsnet) and [detectron2](https://github.com/facebookresearch/detectron2).
+[SAM](https://github.com/facebookresearch/segment-anything), [DINOv2](https://github.com/facebookresearch/dinov2), [SegGPT](https://github.com/baaivision/Painter/tree/main/SegGPT), [HSNet](https://github.com/juhongm999/hsnet), [Semantic-SAM](https://github.com/UX-Decoder/Semantic-SAM) and [detectron2](https://github.com/facebookresearch/detectron2).

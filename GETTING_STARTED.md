@@ -8,6 +8,7 @@ Download the model weights of [DINOv2](https://dl.fbaipublicfiles.com/dinov2/din
 models/
     dinov2_vitl14_pretrain.pth
     sam_vit_h_4b8939.pth
+    swint_only_sam_many2many.pth # Semantic-SAM
 ```
 
 

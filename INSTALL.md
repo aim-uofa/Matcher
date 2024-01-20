@@ -4,6 +4,7 @@
 - Linux or macOS with Python ≥ 3.8
 - PyTorch ≥ 1.13.1 and [torchvision](https://github.com/pytorch/vision/) that matches the PyTorch installation.
 - Detectron2: follow [Detectron2 installation instructions](https://detectron2.readthedocs.io/tutorials/install.html).
+- Semantic-SAM: follow [Semantic-SAM installation instructions](https://github.com/UX-Decoder/Semantic-SAM).
 - `pip install -r requirements.txt`
 
 

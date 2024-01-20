@@ -87,6 +87,8 @@ if __name__ == '__main__':
     parser.add_argument('--sam-size', type=str, default="vit_h")
     parser.add_argument('--dinov2-weights', type=str, default="models/dinov2_vitl14_pretrain.pth")
     parser.add_argument('--sam-weights', type=str, default="models/sam_vit_h_4b8939.pth")
+    parser.add_argument('--use_semantic_sam', action='store_true', help='use semantic-sam')
+    parser.add_argument('--semantic-sam-weights', type=str, default="models/swint_only_sam_many2many.pth")
     parser.add_argument('--points_per_side', type=int, default=64)
     parser.add_argument('--pred_iou_thresh', type=float, default=0.88)
     parser.add_argument('--sel_stability_score_thresh', type=float, default=0.0)
@@ -131,7 +133,11 @@ if __name__ == '__main__':
     Logger.info('# available GPUs: %d' % torch.cuda.device_count())
 
     # Model initialization
-    matcher = build_matcher_oss(args)
+    if not args.use_semantic_sam:
+        matcher = build_matcher_oss(args)
+    else:
+        from matcher.Matcher_SemanticSAM import build_matcher_oss as build_matcher_semantic_sam_oss
+        matcher = build_matcher_semantic_sam_oss(args)
 
     # Helper classes (for testing) initialization
     Evaluator.initialize()
