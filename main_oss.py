@@ -14,6 +14,7 @@ from matcher.common.evaluation import Evaluator
 from matcher.common import utils
 from matcher.data.dataset import FSSDataset
 from matcher.Matcher import build_matcher_oss
+from matcher.Matcher_plus_plus import build_matcher_plus_plus_oss
 
 import random
 random.seed(0)
@@ -39,7 +40,10 @@ def test(matcher, dataloader, args=None):
         matcher.set_target(query_img)
 
         # 2. Predict mask of target
-        pred_mask = matcher.predict()
+        if args.add_padded_tar:
+            pred_mask = matcher.add_padded_predict()
+        else:
+            pred_mask = matcher.predict()
         matcher.clear()
 
         assert pred_mask.size() == batch['query_mask'].size(), \
@@ -88,6 +92,7 @@ if __name__ == '__main__':
     parser.add_argument('--dinov2-weights', type=str, default="models/dinov2_vitl14_pretrain.pth")
     parser.add_argument('--sam-weights', type=str, default="models/sam_vit_h_4b8939.pth")
     parser.add_argument('--use_semantic_sam', action='store_true', help='use semantic-sam')
+    parser.add_argument('--use_plus_plus', action='store_true', help='use matcher plus plus')
     parser.add_argument('--semantic-sam-weights', type=str, default="models/swint_only_sam_many2many.pth")
     parser.add_argument('--points_per_side', type=int, default=64)
     parser.add_argument('--pred_iou_thresh', type=float, default=0.88)
@@ -118,7 +123,11 @@ if __name__ == '__main__':
     parser.add_argument('--topk_scores_threshold', type=float, default=0.7)
     parser.add_argument('--num_merging_mask', type=int, default=10, help='topk masks for merging')
 
-
+    ## plus plus parameters
+    parser.add_argument('--patch_wise_sim_thresh', type=float, default=0.3)
+    parser.add_argument('--mask_thresh', type=float, default=0.5)
+    parser.add_argument('--use_dense_mask_prompt', default=False, action='store_true')
+    parser.add_argument('--add_padded_tar', action='store_true', default=False)
     args = parser.parse_args()
     args.sample_range = eval(args.sample_range)
 
@@ -132,8 +141,10 @@ if __name__ == '__main__':
     args.device = device
     Logger.info('# available GPUs: %d' % torch.cuda.device_count())
 
+    if args.use_plus_plus:
+        matcher = build_matcher_plus_plus_oss(args)
     # Model initialization
-    if not args.use_semantic_sam:
+    elif not args.use_semantic_sam:
         matcher = build_matcher_oss(args)
     else:
         from matcher.Matcher_SemanticSAM import build_matcher_oss as build_matcher_semantic_sam_oss
