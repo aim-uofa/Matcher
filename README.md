@@ -92,7 +92,7 @@ https://github.com/aim-uofa/Matcher/assets/119775808/9ff9502d-7d2a-43bc-a8ef-012
 ## 🎫 License
 
 For academic use, this project is licensed under [the 2-clause BSD] License(https://opensource.org/license/bsd-2-clause). 
-For commercial use, please contact [Chunhua Shen](chhshen@gmail.com).
+For commercial use, please contact [Chunhua Shen](mailto:chhshen@gmail.com).
 
 
 ## 🖊️ Citation
