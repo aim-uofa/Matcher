@@ -40,6 +40,10 @@ Matcher demonstrates impressive generalization performance across various segmen
 - 2024.1 Release code of one-shot semantic segmentation and one-shot part segmentation tasks.
 
 
+## 📖 Recommanded Works
+
+- SINE: A Simple Image Segmentation Framework via In-Context Examples. [GitHub](https://github.com/aim-uofa/SINE).
+- DiffewS: Unleashing the Potential of the Diffusion Model in Few-shot Semantic Segmentation. [GitHub](https://github.com/aim-uofa/DiffewS).
 ## 🗓️ TODO
 - [x] Gradio Demo 
 - [x] Release code of one-shot semantic segmentation and one-shot part segmentation tasks
