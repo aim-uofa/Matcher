@@ -47,7 +47,7 @@ Matcher demonstrates impressive generalization performance across various segmen
 ## 🗓️ TODO
 - [x] Gradio Demo 
 - [x] Release code of one-shot semantic segmentation and one-shot part segmentation tasks
-- [ ] Release code and models for VOS
+- [x] Release code and models for VOS (see [vos-dev branch](https://github.com/aim-uofa/Matcher/blob/vos-dev/matcher_vos/EVALUATION.md))
 
 
 ## 🏗️ Installation
