@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 import torch
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.datasets import make_blobs
 from copy import deepcopy
 
 # 初始化数据
